@@ -1,7 +1,5 @@
-// let animals = ["cat", "hamster", "parrot", "funky chihuahua"];
+let animals = ["cat", "hamster", "parrot", "funky chihuahua"];
 // In the array above, get cat.
-
-const animals = ["cat", "hamster", "parrot", "funky chihuahua"];
 
 // If we know that cat is at index 0
 const catWithIndex = animals[0];
