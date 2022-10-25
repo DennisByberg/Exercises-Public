@@ -6,3 +6,5 @@ for (let i = names.length - 1; i >= 0; i--) {
     names.splice(i, 1);
   }
 }
+
+// console.log(names);
