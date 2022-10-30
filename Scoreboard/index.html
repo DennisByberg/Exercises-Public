@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/script.js"></script>
+    <title>DB Scoreboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>DB Scoreboard</h1>
+    </header>
+    <main>
+      <div class="home-team">
+        <h2>Home Team</h2>
+        <p id="home-points">0</p>
+        <div class="buttons">
+          <button onclick="addOnePointToHomeTeam()" class="button">+ 1</button>
+          <button class="button">- 1</button>
+          <button class="button">Reset</button>
+        </div>
+      </div>
+      <div class="away-team">
+        <h2>Away Team</h2>
+        <p id="away-points">0</p>
+        <div class="buttons">
+          <button onclick="addOnePointToAwayTeam()" class="button">+ 1</button>
+          <button class="button">- 1</button>
+          <button class="button">Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

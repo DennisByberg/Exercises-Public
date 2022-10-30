@@ -1,0 +1,106 @@
+/* ━━━━━━━━━━| DEFAULT |━━━━━━━━━━ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://i.pinimg.com/originals/a2/8d/d8/a28dd835cab3f4b8118e74505ad74a01.jpg");
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  margin: 1rem;
+}
+
+header {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: rgb(195, 172, 255);
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.home-team,
+.away-team {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgb(195, 172, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 20px;
+  background: linear-gradient(
+    to left top,
+    rgba(0, 0, 0, 0.8),
+    rgba(49, 49, 49, 0.9)
+  );
+}
+
+.home-team,
+.away-team {
+  text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.home-team h2 {
+  color: rgb(0, 0, 198);
+}
+
+.away-team h2 {
+  color: red;
+}
+p {
+  color: white;
+  font-size: 50px;
+  margin: 3rem auto;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 7rem;
+  box-shadow: 0 0 10px rgb(195, 172, 255);
+}
+
+button {
+  width: 5rem;
+  height: 2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(186, 186, 255);
+  margin: 0.3rem;
+}
+
+button:last-child {
+  background-color: rgb(255, 148, 148);
+}
+
+button:hover {
+  box-shadow: 0 0 5px black;
+  background-color: rgb(156, 156, 255);
+}
+
+button:last-child:hover {
+  background-color: rgb(225, 118, 148);
+}
+
+button:active {
+  transform: scale(0.95);
+}
