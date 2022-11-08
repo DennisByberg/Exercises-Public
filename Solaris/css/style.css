@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is the background video... */
+#bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  filter: brightness(0.4) grayscale(0.7);
+}
+
+header {
+  /* border: 2px solid white; */
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img {
+  max-width: 5rem;
+  margin: 1rem 0 1rem 1rem;
+  filter: opacity(0.4);
+}
+
+header h1 {
+  margin-right: auto;
+}
+
+header h2 {
+  margin: 3rem;
+  box-shadow: 0 0 2px white;
+  padding: 1rem;
+}
