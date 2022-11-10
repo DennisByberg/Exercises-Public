@@ -1,6 +1,5 @@
 const BASE_URL = "https://fathomless-shelf-54969.herokuapp.com";
 const planets = document.querySelectorAll("main article");
-
 getKey();
 getPlanets();
 
@@ -11,18 +10,39 @@ planets.forEach((planet) => {
   });
 });
 
+/* LEAVE PLANET */
+planets.forEach((planet) => {
+  planet.addEventListener("mouseleave", (event) => {
+    DeleteTextOnLeave(event);
+  });
+});
+
 /* CLICK PLANET */
 planets.forEach((planet) => {
-  planet.addEventListener("click", (event) => {
+  planet.addEventListener("click", () => {
     toggleSlider();
   });
 });
+
+/* CLICK BACK BUTTON */
+const backButton = document
+  .querySelector("#bottom-info-container button")
+  .addEventListener("click", () => {
+    toggleSlider();
+  });
 
 /* FUNCTIONS */
 function ChangeTextOnHover(planets) {
   const planetName = planets.target.id;
   if (planetName != "sat-circle") {
     document.querySelector("#hover-text").textContent = planetName;
+  }
+}
+
+function DeleteTextOnLeave(planets) {
+  const planetName = planets.target.id;
+  if (planetName != "sat-circle") {
+    document.querySelector("#hover-text").textContent = "";
   }
 }
 
@@ -45,7 +65,7 @@ async function getKey() {
 }
 
 async function getPlanets() {
-  const response = await fetch(`${BASE_URL}/bodies`, {
+  const response = await fetch(`${BASE_URL}/bodies/`, {
     headers: {
       "x-zocom": "solaris-vKkkQHqQboi7c6JF",
     },
