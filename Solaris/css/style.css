@@ -15,6 +15,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* This is the background video... */
@@ -83,16 +84,20 @@ header a:nth-child(3):hover {
   /* border: 3px dotted white; */
 }
 
+/* SUN */
 #sun {
+  cursor: pointer;
   background-color: #ffd029;
   height: 100%;
   width: 20rem;
   border-radius: 100%;
   margin-left: -19rem;
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.64);
+  z-index: 2;
 }
 
 #mercury {
+  cursor: pointer;
   background-color: #8c8b85;
   height: 1rem;
   width: 1rem;
@@ -101,6 +106,7 @@ header a:nth-child(3):hover {
 }
 
 #venus {
+  cursor: pointer;
   background-color: #e6cdcb;
   height: 2rem;
   width: 2rem;
@@ -109,6 +115,7 @@ header a:nth-child(3):hover {
 }
 
 #earth {
+  cursor: pointer;
   background-color: #418ed4;
   height: 2rem;
   width: 2rem;
@@ -117,6 +124,7 @@ header a:nth-child(3):hover {
 }
 
 #mars {
+  cursor: pointer;
   background-color: #ef5f5f;
   height: 1rem;
   width: 1rem;
@@ -125,6 +133,7 @@ header a:nth-child(3):hover {
 }
 
 #jupiter {
+  cursor: pointer;
   background-color: #e29468;
   height: 10rem;
   width: 10rem;
@@ -133,6 +142,7 @@ header a:nth-child(3):hover {
 }
 
 #saturn {
+  cursor: pointer;
   background-color: #c7aa72;
   height: 8rem;
   width: 8rem;
@@ -150,6 +160,7 @@ header a:nth-child(3):hover {
 }
 
 #uranus {
+  cursor: pointer;
   background-color: #c9d4f1;
   height: 4rem;
   width: 4rem;
@@ -158,6 +169,7 @@ header a:nth-child(3):hover {
 }
 
 #neptune {
+  cursor: pointer;
   background-color: #7a91a7;
   height: 4rem;
   width: 4rem;
@@ -172,4 +184,66 @@ header a:nth-child(3):hover {
   font-size: 100px;
   bottom: 1rem;
   color: rgba(20, 20, 20, 0.522);
+}
+
+/* ━━━━━━━━━━| SLIDER |━━━━━━━━━━ */
+#slider {
+  color: white;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: 0.3s ease;
+  border: 2px dotted yellow;
+  z-index: 1;
+  flex-direction: column;
+  padding: 7rem;
+}
+
+#slider.show {
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+#slider h4 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+content {
+  max-width: 40rem;
+}
+
+content h2 {
+  font-size: 3rem;
+  align-self: flex-start;
+}
+
+content h3 {
+  font-size: 2rem;
+  align-self: flex-start;
+  color: #a68931;
+}
+
+#slider p:nth-child(3) {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+#info-container {
+  /* border: 1px dotted blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+#info-container p {
+  padding-bottom: 1rem;
 }
