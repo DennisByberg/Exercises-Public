@@ -1,3 +1,8 @@
+/* font-family: 'Shalimar', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Shalimar&display=swap");
+/* font-family: 'Fredericka the Great', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -30,20 +35,43 @@ header {
   align-items: center;
 }
 
+/* SOLARIS IMG */
 header img {
   max-width: 5rem;
-  margin: 1rem 0 1rem 1rem;
+  margin: 0 0 0 2rem;
   filter: opacity(0.4);
 }
 
-header h1 {
+/* SOLARIS */
+header a:nth-child(2) {
+  font-family: "Shalimar", cursive;
   margin-right: auto;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 40px white;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
 }
 
-header h2 {
+header a:nth-child(2):hover {
+  color: rgba(255, 0, 144, 0.299);
+  text-shadow: 0 0 35px white;
+}
+
+/* Dennis Byberg */
+header a:nth-child(3) {
+  font-family: "Shalimar", cursive;
   margin: 3rem;
-  box-shadow: 0 0 2px white;
+  box-shadow: 0 0 6px white;
   padding: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.511);
+  font-size: 26px;
+  background-color: black;
+}
+
+header a:nth-child(3):hover {
+  background-color: rgb(26, 26, 26);
 }
 
 /* PLANETS */
@@ -69,6 +97,7 @@ header h2 {
   height: 1rem;
   width: 1rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #venus {
@@ -76,6 +105,7 @@ header h2 {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #earth {
@@ -83,6 +113,7 @@ header h2 {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #mars {
@@ -90,6 +121,7 @@ header h2 {
   height: 1rem;
   width: 1rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #jupiter {
@@ -97,6 +129,7 @@ header h2 {
   height: 10rem;
   width: 10rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #saturn {
@@ -104,6 +137,7 @@ header h2 {
   height: 8rem;
   width: 8rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #sat-circle {
@@ -120,6 +154,7 @@ header h2 {
   height: 4rem;
   width: 4rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
 }
 
 #neptune {
@@ -127,4 +162,14 @@ header h2 {
   height: 4rem;
   width: 4rem;
   border-radius: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
+}
+
+#hover-text {
+  color: white;
+  position: absolute;
+  z-index: -1;
+  font-size: 100px;
+  bottom: 1rem;
+  color: rgba(20, 20, 20, 0.522);
 }
