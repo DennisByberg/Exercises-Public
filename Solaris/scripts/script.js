@@ -1,7 +1,6 @@
 const BASE_URL = "https://fathomless-shelf-54969.herokuapp.com";
 const planets = document.querySelectorAll("main article");
-getKey();
-getPlanets();
+let x = "";
 
 /* HOVER PLANET */
 planets.forEach((planet) => {
@@ -20,6 +19,9 @@ planets.forEach((planet) => {
 /* CLICK PLANET */
 planets.forEach((planet) => {
   planet.addEventListener("click", () => {
+    x = planet.id;
+    getKey();
+    getPlanets(x);
     toggleSlider();
   });
 });
@@ -57,7 +59,6 @@ async function getKey() {
   // If everything goes as planed...
   if (response.status === 200) {
     const data = await response.json();
-    console.log(data);
   } else {
     // If not...?
     console.error("ERROR");
@@ -70,6 +71,53 @@ async function getPlanets() {
       "x-zocom": "solaris-vKkkQHqQboi7c6JF",
     },
   });
-  const data = await response.json();
-  console.log(data);
+
+  switch (x) {
+    case "sun":
+      x = 0;
+      break;
+    case "mercury":
+      x = 1;
+      break;
+    case "venus":
+      x = 2;
+      break;
+    case "earth":
+      x = 3;
+      break;
+    case "mars":
+      x = 4;
+      break;
+    case "jupiter":
+      x = 5;
+      break;
+    case "saturn":
+      x = 6;
+      break;
+    case "uranus":
+      x = 7;
+      break;
+    case "neptune":
+      x = 8;
+      break;
+  }
+
+  data = await response.json();
+  // name.
+  document.querySelector("#slider h2").innerText = data.bodies[x].name;
+  // latin-name.
+  document.querySelector("#slider h3").innerText = data.bodies[x].latinName;
+  // description.
+  document.querySelector("#slider p").innerText = data.bodies[x].desc;
+  // circumference
+  document.querySelector("#circumference p").innerText =
+    data.bodies[x].circumference;
+  // distance from the sun
+  document.querySelector("#km-from-sun p").innerText = data.bodies[x].distance;
+  // max temp / day.
+  document.querySelector("#max-temp p").innerText = data.bodies[x].temp.day;
+  // min temp / night.
+  document.querySelector("#min-temp p").innerText = data.bodies[x].temp.night;
+  // moons
+  document.querySelector("#moons p").innerText = data.bodies[x].moons;
 }
