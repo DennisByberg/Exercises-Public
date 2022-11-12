@@ -31,6 +31,8 @@ const backButton = document
   .querySelector("#bottom-info-container button")
   .addEventListener("click", () => {
     toggleSlider();
+    console.log(sun);
+    sun.style.backgroundColor = "#ffd029";
   });
 
 /* FUNCTIONS */
@@ -71,6 +73,7 @@ async function getPlanets() {
       "x-zocom": "solaris-vKkkQHqQboi7c6JF",
     },
   });
+  const sun = document.querySelector("#sun");
 
   switch (x) {
     case "sun":
@@ -78,27 +81,35 @@ async function getPlanets() {
       break;
     case "mercury":
       x = 1;
+      sun.style.backgroundColor = "#8c8b85";
       break;
     case "venus":
       x = 2;
+      sun.style.backgroundColor = "#e6cdcb";
       break;
     case "earth":
       x = 3;
+      sun.style.backgroundColor = "#418ed4";
       break;
     case "mars":
       x = 4;
+      sun.style.backgroundColor = "#ef5f5f";
       break;
     case "jupiter":
       x = 5;
+      sun.style.backgroundColor = "#e29468";
       break;
     case "saturn":
       x = 6;
+      sun.style.backgroundColor = "#c7aa72";
       break;
     case "uranus":
       x = 7;
+      sun.style.backgroundColor = "#c9d4f1";
       break;
     case "neptune":
       x = 8;
+      sun.style.backgroundColor = "#7a91a7";
       break;
   }
 
