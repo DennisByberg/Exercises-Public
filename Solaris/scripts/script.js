@@ -20,7 +20,6 @@ planets.forEach((planet) => {
 planets.forEach((planet) => {
   planet.addEventListener("click", () => {
     x = planet.id;
-    getKey();
     getPlanets(x);
     toggleSlider();
   });
@@ -31,7 +30,6 @@ const backButton = document
   .querySelector("#bottom-info-container button")
   .addEventListener("click", () => {
     toggleSlider();
-    console.log(sun);
     sun.style.backgroundColor = "#ffd029";
   });
 
@@ -61,6 +59,7 @@ async function getKey() {
   // If everything goes as planed...
   if (response.status === 200) {
     const data = await response.json();
+    return data.key; // 1
   } else {
     // If not...?
     console.error("ERROR");
@@ -68,9 +67,10 @@ async function getKey() {
 }
 
 async function getPlanets() {
+  const key = await getKey();
   const response = await fetch(`${BASE_URL}/bodies/`, {
     headers: {
-      "x-zocom": "solaris-vKkkQHqQboi7c6JF",
+      "x-zocom": key,
     },
   });
   const sun = document.querySelector("#sun");
