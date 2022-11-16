@@ -22,6 +22,7 @@ input {
   padding: 0.7rem 1.2rem;
   border: 1px solid #5f9341;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #input-btn {
@@ -32,6 +33,14 @@ input {
 #delete-btn {
   background-color: #ffffff;
   color: #5f9341;
+}
+
+#input-btn:hover {
+  background-color: #58883d;
+}
+
+#delete-btn:hover {
+  background-color: #eaffec;
 }
 
 ul {
