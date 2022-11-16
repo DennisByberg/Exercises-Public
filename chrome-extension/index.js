@@ -1,23 +1,23 @@
-const myLeads = [];
+let myLeads = [];
 const inputEl = document.querySelector("#input-el");
 const ulEl = document.querySelector("#ul-el");
 
-// 1. Save a key-value pair in localStorage
-// 2. Refresh the page. Get the value and log it to the console
-// 3. Clear localStorage
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+console.log(leadsFromLocalStorage);
 
-// HINTS:
-// localStorage.setItem(key, value)
-// localStorage.getItem(key)
-// localStorage.clear()
-// PS: both key and value need to be strings
-
-console.log(localStorage.getItem(myLeads));
+if (leadsFromLocalStorage) {
+  myLeads = leadsFromLocalStorage;
+  renderLeads();
+}
 
 document.querySelector("#input-btn").addEventListener("click", () => {
   myLeads.push(inputEl.value);
   inputEl.value = "";
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
   renderLeads();
+
+  // To verify that it works:
+  console.log(localStorage.getItem("myLeads"));
 });
 
 function renderLeads() {
