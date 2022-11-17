@@ -207,8 +207,8 @@ header a:nth-child(3):hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(100%);
-  transition: all 0.3s ease;
+  transform: translateY(200%);
+  transition: all 0.5s ease;
   z-index: 1;
   flex-direction: column;
   padding: 7rem;

@@ -125,13 +125,8 @@ async function getPlanets() {
     data.bodies[planetIndex].latinName;
 
   // description.
-  if (data.bodies[planetIndex].desc.length < maxLengthOfParagraph) {
-    document.querySelector("#slider p").innerText =
-      data.bodies[planetIndex].desc;
-    document.querySelector("#slider p").style.fontSize = "15px";
-  } else {
-    document.querySelector("#slider p").innerText =
-      data.bodies[planetIndex].desc;
+  document.querySelector("#slider p").innerText = data.bodies[planetIndex].desc;
+  if (data.bodies[planetIndex].desc.length > maxLengthOfParagraph) {
     document.querySelector("#slider p").style.fontSize = "14px";
     document.querySelector("#slider").style.marginTop = "1rem";
   }
