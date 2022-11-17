@@ -1,31 +1,31 @@
 const BASE_URL = "https://fathomless-shelf-54969.herokuapp.com";
 const planets = document.querySelectorAll("main article");
-let x = "";
+let planetIndex = "";
 
-/* HOVER PLANET */
+// |MOUSE-OVER EVENT|~> Triggered when you hover over a planet and change the planet name text...
 planets.forEach((planet) => {
   planet.addEventListener("mouseover", (event) => {
     ChangeTextOnHover(event);
   });
 });
 
-/* LEAVE PLANET */
+// |MOUSE-LEAVE EVENT|~> Triggered when your mouse:hover leaves the planet and resets the text to an empty string...
 planets.forEach((planet) => {
   planet.addEventListener("mouseleave", (event) => {
     DeleteTextOnLeave(event);
   });
 });
 
-/* CLICK PLANET */
+// |CLICK EVENT|~> Triggered when you click a planet...
 planets.forEach((planet) => {
   planet.addEventListener("click", () => {
-    x = planet.id;
-    getPlanets(x);
+    planetIndex = planet.id;
+    getPlanets(planetIndex);
     toggleSlider();
   });
 });
 
-/* CLICK BACK BUTTON */
+// |CLICK-EVENT|~> Triggered when you are in the slider-section and you click the BACK button...
 const backButton = document
   .querySelector("#bottom-info-container button")
   .addEventListener("click", () => {
@@ -33,7 +33,6 @@ const backButton = document
     sun.style.backgroundColor = "#ffd029";
   });
 
-/* FUNCTIONS */
 function ChangeTextOnHover(planets) {
   const planetName = planets.target.id;
   if (planetName != "sat-circle") {
@@ -48,12 +47,10 @@ function DeleteTextOnLeave(planets) {
   }
 }
 
-// This function only toggle the slider to go back and fourth.
 function toggleSlider() {
   slider.classList.toggle("show");
 }
 
-/* ASYNC FUNCTIONS */
 async function getKey() {
   const response = await fetch(`${BASE_URL}/keys`, { method: "POST" });
   // If everything goes as planed...
@@ -75,60 +72,65 @@ async function getPlanets() {
   });
   const sun = document.querySelector("#sun");
 
-  switch (x) {
+  switch (planetIndex) {
     case "sun":
-      x = 0;
+      planetIndex = 0;
       break;
     case "mercury":
-      x = 1;
+      planetIndex = 1;
       sun.style.backgroundColor = "#8c8b85";
       break;
     case "venus":
-      x = 2;
+      planetIndex = 2;
       sun.style.backgroundColor = "#e6cdcb";
       break;
     case "earth":
-      x = 3;
+      planetIndex = 3;
       sun.style.backgroundColor = "#418ed4";
       break;
     case "mars":
-      x = 4;
+      planetIndex = 4;
       sun.style.backgroundColor = "#ef5f5f";
       break;
     case "jupiter":
-      x = 5;
+      planetIndex = 5;
       sun.style.backgroundColor = "#e29468";
       break;
     case "saturn":
-      x = 6;
+      planetIndex = 6;
       sun.style.backgroundColor = "#c7aa72";
       break;
     case "uranus":
-      x = 7;
+      planetIndex = 7;
       sun.style.backgroundColor = "#c9d4f1";
       break;
     case "neptune":
-      x = 8;
+      planetIndex = 8;
       sun.style.backgroundColor = "#7a91a7";
       break;
   }
 
   data = await response.json();
   // name.
-  document.querySelector("#slider h2").innerText = data.bodies[x].name;
+  document.querySelector("#slider h2").innerText =
+    data.bodies[planetIndex].name;
   // latin-name.
-  document.querySelector("#slider h3").innerText = data.bodies[x].latinName;
+  document.querySelector("#slider h3").innerText =
+    data.bodies[planetIndex].latinName;
   // description.
-  document.querySelector("#slider p").innerText = data.bodies[x].desc;
+  document.querySelector("#slider p").innerText = data.bodies[planetIndex].desc;
   // circumference
   document.querySelector("#circumference p").innerText =
-    data.bodies[x].circumference;
+    data.bodies[planetIndex].circumference;
   // distance from the sun
-  document.querySelector("#km-from-sun p").innerText = data.bodies[x].distance;
+  document.querySelector("#km-from-sun p").innerText =
+    data.bodies[planetIndex].distance;
   // max temp / day.
-  document.querySelector("#max-temp p").innerText = data.bodies[x].temp.day;
+  document.querySelector("#max-temp p").innerText =
+    data.bodies[planetIndex].temp.day;
   // min temp / night.
-  document.querySelector("#min-temp p").innerText = data.bodies[x].temp.night;
+  document.querySelector("#min-temp p").innerText =
+    data.bodies[planetIndex].temp.night;
   // moons
-  document.querySelector("#moons p").innerText = data.bodies[x].moons;
+  document.querySelector("#moons p").innerText = data.bodies[planetIndex].moons;
 }

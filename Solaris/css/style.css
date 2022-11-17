@@ -305,7 +305,7 @@ content h3 {
   #moons p {
     margin: auto;
   }
-  /* SOLARIS */
+
   header {
     box-shadow: 0 0 2px white;
     margin: 2rem auto 0 auto;
@@ -318,5 +318,31 @@ content h3 {
 
   header img {
     margin: auto;
+  }
+
+  #jupiter {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  #saturn {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  #sat-circle {
+    height: 7rem;
+    width: 0.2rem;
+    margin: -1rem 2.4rem;
+  }
+
+  #uranus {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  #neptune {
+    height: 3rem;
+    width: 3rem;
   }
 }
