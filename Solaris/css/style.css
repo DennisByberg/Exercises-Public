@@ -345,4 +345,9 @@ content h3 {
     height: 3rem;
     width: 3rem;
   }
+
+  #slider p:nth-child(3) {
+    margin: 0 0rem;
+    padding: 0;
+  }
 }

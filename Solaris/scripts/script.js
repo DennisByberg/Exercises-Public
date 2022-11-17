@@ -31,6 +31,8 @@ const backButton = document
   .addEventListener("click", () => {
     toggleSlider();
     sun.style.backgroundColor = "#ffd029";
+    let moons = document.querySelector("#moons");
+    moons.innerHTML = "";
   });
 
 function ChangeTextOnHover(planets) {
@@ -51,27 +53,7 @@ function toggleSlider() {
   slider.classList.toggle("show");
 }
 
-async function getKey() {
-  const response = await fetch(`${BASE_URL}/keys`, { method: "POST" });
-  // If everything goes as planed...
-  if (response.status === 200) {
-    const data = await response.json();
-    return data.key; // 1
-  } else {
-    // If not...?
-    console.error("ERROR");
-  }
-}
-
-async function getPlanets() {
-  const key = await getKey();
-  const response = await fetch(`${BASE_URL}/bodies/`, {
-    headers: {
-      "x-zocom": key,
-    },
-  });
-  const sun = document.querySelector("#sun");
-
+function getPlanetIndex() {
   switch (planetIndex) {
     case "sun":
       planetIndex = 0;
@@ -109,28 +91,76 @@ async function getPlanets() {
       sun.style.backgroundColor = "#7a91a7";
       break;
   }
+}
 
+async function getKey() {
+  const response = await fetch(`${BASE_URL}/keys`, { method: "POST" });
+  // If everything goes as planed...
+  if (response.status === 200) {
+    const data = await response.json();
+    return data.key; // 1
+  } else {
+    // If not...?
+    console.error("ERROR");
+  }
+}
+
+async function getPlanets() {
+  const key = await getKey();
+  const response = await fetch(`${BASE_URL}/bodies/`, {
+    headers: {
+      "x-zocom": key,
+    },
+  });
   data = await response.json();
-  // name.
+  getPlanetIndex();
+
+  let maxLengthOfParagraph = 1000;
+  // name
   document.querySelector("#slider h2").innerText =
     data.bodies[planetIndex].name;
+
   // latin-name.
   document.querySelector("#slider h3").innerText =
     data.bodies[planetIndex].latinName;
+
   // description.
-  document.querySelector("#slider p").innerText = data.bodies[planetIndex].desc;
+  if (data.bodies[planetIndex].desc.length < maxLengthOfParagraph) {
+    document.querySelector("#slider p").innerText =
+      data.bodies[planetIndex].desc;
+    document.querySelector("#slider p").style.fontSize = "15px";
+  } else {
+    document.querySelector("#slider p").innerText =
+      data.bodies[planetIndex].desc;
+    document.querySelector("#slider p").style.fontSize = "14px";
+    document.querySelector("#slider").style.marginTop = "1rem";
+  }
+
   // circumference
   document.querySelector("#circumference p").innerText =
     data.bodies[planetIndex].circumference;
+
   // distance from the sun
-  document.querySelector("#km-from-sun p").innerText =
-    data.bodies[planetIndex].distance;
+  document.querySelector(
+    "#km-from-sun p"
+  ).innerText = `${data.bodies[planetIndex].distance} km`;
+
   // max temp / day.
-  document.querySelector("#max-temp p").innerText =
-    data.bodies[planetIndex].temp.day;
+  document.querySelector(
+    "#max-temp p"
+  ).innerText = `${data.bodies[planetIndex].temp.day} °`;
+
   // min temp / night.
-  document.querySelector("#min-temp p").innerText =
-    data.bodies[planetIndex].temp.night;
+  document.querySelector(
+    "#min-temp p"
+  ).innerText = `${data.bodies[planetIndex].temp.night} °`;
+
   // moons
-  document.querySelector("#moons p").innerText = data.bodies[planetIndex].moons;
+  if (data.bodies[planetIndex].moons.length > 0) {
+    let moons = document.querySelector("#moons");
+    moons.innerHTML = `
+    <h4>Månar</h4>
+    <p>${data.bodies[planetIndex].moons}</p>
+    `;
+  }
 }
