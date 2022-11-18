@@ -265,6 +265,7 @@ content h3 {
 
 #bottom-info-container p {
   overflow-y: auto;
+
   width: 20rem;
 }
 

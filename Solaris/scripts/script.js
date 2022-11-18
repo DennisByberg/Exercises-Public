@@ -132,8 +132,9 @@ async function getPlanets() {
   }
 
   // circumference
-  document.querySelector("#circumference p").innerText =
-    data.bodies[planetIndex].circumference;
+  document.querySelector(
+    "#circumference p"
+  ).innerText = `${data.bodies[planetIndex].circumference} km`;
 
   // distance from the sun
   document.querySelector(
