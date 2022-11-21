@@ -1,8 +1,0 @@
-Vilka datatyper finns det i JS?
-
-de 5 vanligaste datatyperna i JS är:
-- string
-- number
-- boolean
-- undefined
-- null
