@@ -1,0 +1,5 @@
+Vad i följande kod är blocket som exekveras?
+
+el.on('click', () => {
+    alert('Ariba!');     <~~ DETTA...
+})

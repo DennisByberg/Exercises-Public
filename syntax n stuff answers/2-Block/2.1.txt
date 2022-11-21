@@ -1,0 +1,5 @@
+Vilken av följande tecken visar ett kodblock?
+
+[] // A ~> ARRAY
+() // B ~> ARGUMENT
+{} // C ~> KODBLOCK

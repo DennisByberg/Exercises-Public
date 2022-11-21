@@ -1,0 +1,7 @@
+Vilken av följande syntax är korrekt sätt att skriva strängar.
+
+"Hello World" // A
+'Hello World' // B
+`Hello World` // C
+
+Svar: Alla 3 är helt rätt beroende på vad man föredrar. Backticks är dock bra när du ska {något ord}.
