@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+body a {
+  display: flex;
+  color: wheat;
+  text-decoration: none;
+  /* padding: 1rem; */
+  min-width: 10rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.086);
+}
+
+body a:hover {
+  background-color: rgb(35, 35, 35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

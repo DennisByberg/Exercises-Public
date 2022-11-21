@@ -1,7 +1,8 @@
-Vilken av följande syntax är korrekt sätt att skriva strängar.
+Which of the following syntax is the correct way to write strings?
 
 "Hello World" // A
 'Hello World' // B
 `Hello World` // C
 
-Svar: Alla 3 är helt rätt beroende på vad man föredrar. Backticks är dock bra när du ska {något ord}.
+Answer ~>
+All 3 are absolutely right depending on what you prefer. However, backticks are good when you want to concatenate a string.

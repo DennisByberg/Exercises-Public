@@ -1,5 +1,5 @@
-Vad i följande kod är blocket som exekveras?
+In the following code, what is the block that is executed?
 
 el.on('click', () => {
-    alert('Ariba!');     <~~ DETTA...
-})
+    alert('Ariba!');     <~~ THIS
+}

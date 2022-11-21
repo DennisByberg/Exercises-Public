@@ -1,6 +1,7 @@
-Vad är den tekniska skillnaden ( förutom var, let ) på dessa två deklarationer?
+What is the technical difference (besides var, let) on these two declarations?
 
 let name = 'Greta Thunberg';
 var name = 'Greta Thunberg';
 
-// var kan användas globalt men inte let.
+Answer ~>
+var can be used globally but not let.

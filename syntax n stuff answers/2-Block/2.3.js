@@ -1,4 +1,4 @@
-// Vad kommer stå i console.log()?
+// What will be in console.log()?
 
 var greeting = "Good bye world!";
 {
@@ -6,4 +6,6 @@ var greeting = "Good bye world!";
 }
 console.log(greeting);
 
-// Svar: "Good bye world!" eftersom texten endast ändras inuti kodblocket och inte utanför...
+/* Answer ~> 
+"Good bye world!" because the text only changes inside the code block and not outside...
+*/

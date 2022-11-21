@@ -1,5 +1,6 @@
-// Hur tar man reda på vad en variabel har för datatyp?
+// How to find out the data type of a variable?
 
-// Svar: Med hjälp av typeof.
 const x = 10;
 console.log(typeof x);
+
+/* Answer ~> Using typeof. */

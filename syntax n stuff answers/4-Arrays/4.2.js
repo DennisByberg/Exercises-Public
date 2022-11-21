@@ -1,10 +1,11 @@
-// Lägg till en frukt i början och en frukt i slutet på arrayen.
+// Add a fruit to the beginning and a fruit to the end of the array.
+
 const fruits = ["apple", "pear", "banana", "orange", "kiwi"];
 
-// lägg till en frukt i slutet...
+// add a fruit to the end of the array...
 fruits.push("grape");
 
-// lägg till en frukt i början...
+// add a fruit to the beginning of the array...
 fruits.unshift("blood-orange");
 
 console.log(fruits);

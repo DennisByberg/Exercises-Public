@@ -1,5 +1,5 @@
-Vilken av följande tecken visar ett kodblock?
+Which of the following characters indicates a code block?
 
 [] // A ~> ARRAY
 () // B ~> ARGUMENT
-{} // C ~> KODBLOCK
+{} // C ~> CODEBLOCK
