@@ -1,5 +1,0 @@
-Which of the following characters indicates a code block?
-
-[] // A ~> ARRAY
-() // B ~> ARGUMENT
-{} // C ~> CODEBLOCK
