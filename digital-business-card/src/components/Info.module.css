@@ -7,16 +7,19 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
+  margin-top: 1rem;
 }
 
 .profilePicture {
   margin: auto;
-  max-width: 300px;
+  max-width: 200px;
   border-radius: 20px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 4px 4px 10px black;
+  border: 2px solid black;
 }
 
 header h1 {
+  margin-top: 1rem;
 }
 
 header h2 {
@@ -28,11 +31,16 @@ header h2 {
 header h3 {
   font-weight: normal;
   font-size: 10px;
+  margin: 1rem 0;
 }
 
 .buttons {
   display: flex;
   gap: 1.5rem;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header button {
@@ -44,16 +52,14 @@ header button {
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  background-color: rgb(255, 203, 239);
+  transition: 0.3s;
+  font-weight: bold;
 }
 
-/* Email */
-header button:nth-child(1) {
-  background-color: #ffffff;
-}
-
-/* Linked IN */
-header button:nth-child(2) {
-  background-color: #5093e2;
+header button:hover {
+  background-color: rgb(255, 131, 218);
+  cursor: pointer;
 }
 
 header button img {

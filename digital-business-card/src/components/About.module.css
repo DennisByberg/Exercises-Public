@@ -2,24 +2,29 @@
 /* font-family: 'Inter', sans-serif; */
 
 main {
+  font-family: "Inter", sans-serif;
   flex: auto;
   display: flex;
-  justify-content: center;
-  font-family: "Inter", sans-serif;
-  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
 }
 
 main section {
-  max-width: 350px;
-  border: 1px solid black;
+  max-width: 340px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main section label {
   font-size: 25px;
+  color: #f3bf99;
 }
 
 main section p {
   font-size: 13px;
-  line-height: 1.2rem;
-  margin-top: 1rem;
+  line-height: 1.4rem;
+  margin-top: 0.3rem;
 }

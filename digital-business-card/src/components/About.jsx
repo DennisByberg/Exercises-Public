@@ -1,5 +1,5 @@
 import React from "react";
-import AboutCSS from "./About.module.css";
+import "./About.module.css";
 
 const About = () => {
   return (
@@ -11,6 +11,8 @@ const About = () => {
           simple and automating daily tasks. I try to keep up with security and
           best practices, and am always looking for new things to learn.
         </p>
+      </section>
+      <section>
         <label>Interests</label>
         <p>
           I love playing football, working out, programming and spending time
