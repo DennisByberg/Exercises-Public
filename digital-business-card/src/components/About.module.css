@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* font-family: 'Inter', sans-serif; */
+
+main {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+}
+
+main section {
+  max-width: 350px;
+  border: 1px solid black;
+}
+
+main section label {
+  font-size: 25px;
+}
+
+main section p {
+  font-size: 13px;
+  line-height: 1.2rem;
+  margin-top: 1rem;
+}
