@@ -1,0 +1,70 @@
+.card-container {
+  display: flex;
+  /* border: 1px solid white; */
+  width: 100vw;
+  height: 13rem;
+  padding: 1rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* Everything except the player image */
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1rem;
+}
+
+/* Location badge */
+.location-badge {
+  width: 25px;
+}
+
+/* Badge + Nationality */
+.card-nationality-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* First name + Last name */
+.card-player-name-container {
+  display: flex;
+  gap: 0.3rem;
+}
+
+/* example: {url} */
+.player-imageOfPlayer {
+  height: 100%;
+  width: 130px;
+  border-radius: 10px;
+}
+
+/* example: Sweden */
+.player-nationality {
+  text-transform: uppercase;
+  color: rgb(255, 186, 186);
+}
+
+/* example: Dennis Byberg */
+.player-firstName,
+.player-lastName {
+  color: wheat;
+  font-size: 25px;
+}
+
+/* example: 99 */
+.player-age {
+}
+
+/* example: 99 */
+.player-shirtNumber {
+}
+
+/* example: attacker */
+.player-position {
+}
+
+/* example: PSG */
+.player-currentClub {
+}

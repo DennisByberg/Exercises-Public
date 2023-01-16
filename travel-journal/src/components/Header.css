@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgb(43, 43, 43);
+  height: 4rem;
+}
+
+header img {
+  height: 35px;
+  width: 35px;
+  filter: invert(1);
+}
+
+header h1 {
+  color: rgb(233, 233, 233);
+  font-weight: normal;
+  font-family: "Moon Dance", cursive;
+  font-size: 35px;
+}
