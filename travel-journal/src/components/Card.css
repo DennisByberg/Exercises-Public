@@ -1,10 +1,10 @@
 .card-container {
   display: flex;
-  /* border: 1px solid white; */
   width: 100vw;
   height: 13rem;
-  padding: 1rem 2rem;
   font-family: "Inter", sans-serif;
+  color: white;
+  padding: 1rem 2rem;
 }
 
 /* Everything except the player image */
@@ -51,20 +51,4 @@
 .player-lastName {
   color: wheat;
   font-size: 25px;
-}
-
-/* example: 99 */
-.player-age {
-}
-
-/* example: 99 */
-.player-shirtNumber {
-}
-
-/* example: attacker */
-.player-position {
-}
-
-/* example: PSG */
-.player-currentClub {
 }

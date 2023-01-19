@@ -14,7 +14,7 @@ export default [
   {
     id: 2,
     firstName: "Neymar",
-    lastName: "da Silva Santos Junior",
+    lastName: "Jr",
     nationality: "Brazil",
     age: 30,
     shirtNumber: 10,
@@ -33,6 +33,17 @@ export default [
     position: "midfielder",
     currentClub: "FC Barcelona",
     imageOfPlayer:
-      "https://w0.peakpx.com/wallpaper/238/480/HD-wallpaper-de-jong-barcelona-champions-fc-fcb-frenkie-holland-liga-spain.jpg",
+      "https://w0.peakpx.com/wallpaper/965/755/HD-wallpaper-frenkie-de-jong-barca-barcelona-football-nike-soccer.jpg",
+  },
+  {
+    id: 4,
+    firstName: "João",
+    lastName: "Cancelo",
+    nationality: "Portugal",
+    age: 28,
+    shirtNumber: 7,
+    position: "defender",
+    currentClub: "Manchester City",
+    imageOfPlayer: "https://pbs.twimg.com/media/E-xTUUQXMA03jsl.jpg:large",
   },
 ];
