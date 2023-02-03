@@ -1,0 +1,67 @@
+/* .component-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dotted red;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.text-heading {
+  font-family: "cairo";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  margin: 0;
+}
+
+.module-text {
+  font-family: "cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+}
+
+span {
+  background-color: rgba(243, 245, 246, 0.94);
+  width: 24px;
+  height: 20px;
+  border-radius: 4px;
+  padding: 0px 8px;
+  margin-right: 1rem;
+}
+
+.card-heading {
+  font-family: "cairo";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  padding: 0;
+  margin: 0;
+}
+
+.card-text {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.lession-card {
+  border: 1px solid black;
+  height: 100%;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(230, 235, 243, 1);
+}
+.module {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  background-color: rgba(230, 235, 243, 1);
+}  */

@@ -1,0 +1,23 @@
+.component-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.button {
+  background-color: rgba(234, 72, 72, 1);
+  width: 34rem;
+  height: 55px;
+  border-radius: 4px;
+  padding: 16px;
+  color: white;
+  border: none;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
