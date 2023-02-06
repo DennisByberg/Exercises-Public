@@ -23,3 +23,16 @@
   box-shadow: 0px 6px 16px 0px #0000000d;
   border-radius: 6px;
 }
+
+/* .·:*¨ ✘•|  MEDIA QUERY  |•✘ ¨*:·.  */
+/* ✘•| MOBILE |•✘ */
+@media only screen and (min-width: 0px) and (max-width: 499px) {
+  /* Navbar Text */
+  /* Navbar */
+  .userlist-topbar-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,7 +1,9 @@
 .component-11 {
   display: flex;
   justify-content: center;
-  background-color: #e0d6ff;
+  max-width: 48rem;
+  border-radius: 6px;
+  padding: 0 1rem 1rem 0;
 }
 
 .component-11 .component-3 .card-heading {
@@ -18,6 +20,10 @@
   display: flex;
   flex-direction: column;
   min-width: 8rem;
+}
+
+.component-11 .second-section p {
+  font-size: 12px;
 }
 
 /* Första boxen */

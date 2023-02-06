@@ -27,6 +27,8 @@
   gap: 0.6rem;
   padding-right: 3rem;
   padding-top: 0.8rem;
+  border-radius: 0 6px 6px 0;
+  width: 100%;
 }
 
 /* h2 || Mål med modul */

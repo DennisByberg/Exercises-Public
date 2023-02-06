@@ -15,7 +15,7 @@ main {
 
 /* Används för att göra ett litet mellanrum mellan varje component */
 section {
-  margin: 1rem 0;
+  margin: 0.1rem 0;
 }
 
 /* ANVÄNDS MER ÄN ETT STÄLLE */

@@ -40,3 +40,33 @@ ul button:nth-child(3) {
 ul button:last-child {
   border-radius: 0px 4px 4px 0px;
 }
+
+@media (max-width: 750px) {
+  ul {
+    flex-direction: column;
+  }
+  ul button:nth-child(1) {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  ul button:nth-child(2),
+  ul button:nth-child(3) {
+    border: 1px solid black;
+  }
+
+  ul button:nth-child(2) {
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+
+  ul button:nth-child(3) {
+    border-top: none;
+  }
+  ul button:nth-child(4) {
+    border-top: none;
+  }
+
+  ul button:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}

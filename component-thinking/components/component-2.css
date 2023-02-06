@@ -1,23 +1,25 @@
 .component-2 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 /* Buttons */
-.button {
+.component-2 .button {
   background-color: rgba(234, 72, 72, 1);
-  width: 34rem;
-  height: 55px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 8px 100px;
   color: white;
   border: none;
   font-family: "Cairo";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: clamp(15px, 1vw, 20px);
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .component-2 .button {
+    padding: 8px 30px;
+  }
 }
