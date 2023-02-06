@@ -3,19 +3,21 @@
   justify-content: center;
   background-color: #e0d6ff;
 }
-/* Avståndet mellan komponenterna */
-.component-11 section {
-  margin: 0.5rem;
-}
-/* Första paragrafen i första boxen || 01 */
-.component-11 figure:nth-child(1) p:nth-child(1) {
+
+.component-11 .component-3 .card-heading {
   border-bottom: 2px solid black;
-  width: 45px;
+  max-width: 3rem;
 }
-/* Avståndet neråt  */
-.component-11 figure:nth-child(1),
-.component-11 figure:nth-child(2) {
-  padding-bottom: 2rem;
+
+.calender-container {
+  display: flex;
+  align-items: center;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  min-width: 8rem;
 }
 
 /* Första boxen */
@@ -26,19 +28,20 @@
   padding: 1rem 5rem 2rem 1rem;
   gap: 1rem;
 }
+
 /* Andra boxen */
 .component-11 figure:nth-child(2) {
   display: flex;
   flex-direction: column;
-  padding-right: 3rem;
   padding-top: 0.8rem;
 }
 
 /* h2 || Mål med modul */
 .component-11 h2 {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   margin-bottom: 0.5rem;
 }
+
 .component-11 .component-4 ul button {
   width: 100%;
   padding: 1rem;
