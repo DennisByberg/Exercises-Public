@@ -1,0 +1,68 @@
+.component-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.component-4 ul button:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.803);
+}
+
+/* Första rutan */
+.picture-container{
+    width: 15.3rem;
+    height: 12.5rem;
+    background-color: #666A73;
+    border-radius: 8px 8px 0px 0px;
+}
+/* Andra rutan */
+div .text-container{
+    margin-bottom:2rem;
+}
+.button-container{
+    width: 15.3rem;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F6FF;
+}
+.component-12 button{
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.3rem;
+    font-size: 12px;
+    font-family: 'cairo';
+    padding:4px;
+    background-color: #14161916
+}
+  
+.component-12 button:nth-child(2) {
+    background-color: rgba(20, 22, 25, 0.8);
+    color: white;
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .component-12 button:nth-child(3),
+  .component-12 button:nth-child(4) {
+    border-radius: 0;
+    border: none;
+  }
+  
+  .component-12 button:nth-child(3) {
+    border-radius: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .component-12 button:nth-child(4) {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .component-12 button:last-child {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 0px 0px 4px 4px;
+  }
