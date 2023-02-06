@@ -27,8 +27,6 @@
 /* .·:*¨ ✘•|  MEDIA QUERY  |•✘ ¨*:·.  */
 /* ✘•| MOBILE |•✘ */
 @media only screen and (min-width: 0px) and (max-width: 499px) {
-  /* Navbar Text */
-  /* Navbar */
   .userlist-topbar-text {
     display: flex;
     flex-direction: column;
