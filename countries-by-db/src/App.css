@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
+/* font-family: 'Edu NSW ACT Foundation', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
+/* font-family: 'Qwigley', cursive; */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkGrey: #232323;
+  --blue: #008cdf;
+  --green: rgb(152, 219, 124);
+  --darkBlue: #0d1117;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  margin: 0 2rem;
+}

@@ -1,0 +1,51 @@
+.header {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  width: 100%;
+
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.header__logo {
+  height: 4rem;
+  /* border: 1px solid wheat; */
+  animation: rotate 10s linear infinite;
+}
+
+/* Navigation Container */
+.header__nav {
+  /* border: 1px solid wheat; */
+}
+
+/* UL */
+.header__ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Links */
+.header__ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--blue);
+}
+
+.header__ul li a:hover {
+  color: var(--green);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
