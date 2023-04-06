@@ -1,0 +1,15 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+
+  &__signature {
+    @include fontFamilyQwigley;
+    color: $white;
+
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  }
+}

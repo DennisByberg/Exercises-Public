@@ -1,0 +1,22 @@
+@import "../../sass/colors";
+@import "../../sass/fonts";
+
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    @include fontFamilyEduNswActFoundation;
+    color: $blue;
+
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  &__title-api {
+    color: $green;
+  }
+}

@@ -1,5 +1,5 @@
-//css
-import "./Homepage.css";
+//scss
+import "./Homepage.scss";
 //components
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";

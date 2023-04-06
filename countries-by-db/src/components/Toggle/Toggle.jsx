@@ -1,10 +1,11 @@
-import "./Toggle.css";
+// sass
+import "./Toggle.scss";
 
 const Toggle = () => {
   return (
     <label className="switch">
-      <input type="checkbox" />
-      <span className="slider round"></span>
+      <input className="switch__input" type="checkbox" />
+      <span className="switch__slider"></span>
     </label>
   );
 };

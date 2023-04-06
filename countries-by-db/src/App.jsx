@@ -1,7 +1,10 @@
-import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// sass
+import "./App.scss";
+// components
 import Homepage from "./pages/Homepage/Homepage";
 import Searchpage from "./pages/Searchpage/Searchpage";
+//other
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
   const router = createBrowserRouter([

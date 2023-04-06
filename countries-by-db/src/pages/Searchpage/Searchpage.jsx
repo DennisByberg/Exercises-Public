@@ -1,5 +1,5 @@
-//css
-import "./Searchpage.css";
+//scss
+import "./Searchpage.scss";
 //components
 import Header from "../../components/Header/Header";
 import SearchCountry from "../../components/SearchCountry/SearchCountry";

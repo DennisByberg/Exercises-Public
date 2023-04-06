@@ -1,0 +1,14 @@
+@import "./sass/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: $darkBlue;
+  color: $white;
+  margin: 0 2rem;
+}

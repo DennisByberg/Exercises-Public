@@ -1,0 +1,44 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  width: 100%;
+
+  @include fontFamilyEduNswActFoundation;
+
+  &__logo {
+    height: 4rem;
+    animation: rotate 20s linear infinite;
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    li a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: $blue;
+    }
+    li a:hover {
+      color: $green;
+    }
+  }
+}
+
+// Keyframes
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

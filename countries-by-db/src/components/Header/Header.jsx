@@ -1,6 +1,9 @@
-import "./Header.css";
-import { Link } from "react-router-dom";
+// scss
+import "./Header.scss";
+//components
 import Toggle from "../Toggle/Toggle";
+//other
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
