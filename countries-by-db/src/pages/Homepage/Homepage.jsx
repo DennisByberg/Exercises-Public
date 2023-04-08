@@ -9,7 +9,7 @@ const Homepage = () => {
     <section className="homepage">
       <Header />
       <h1 className="homepage__title">
-        Countries <span className="homepage__title-api">API</span>
+        COUNTRIES <span className="homepage__title-api">API</span>
       </h1>
       <Footer />
     </section>

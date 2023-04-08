@@ -7,8 +7,24 @@
   user-select: none;
 }
 
-body {
+.App {
   background-color: $darkBlue;
   color: $white;
-  margin: 0 2rem;
+
+  padding: 0 2rem;
+}
+
+.lightMode {
+  background-color: $white;
+  color: $black;
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/white/white-contour-c990a61f.svg");
+  background-size: cover; /* Make the image cover the entire background area */
+  background-position: center; /* Center the image on the background area */
+
+  transition: 400ms ease-in-out;
+}
+
+// SCROLLBAR
+body::-webkit-scrollbar {
+  display: none;
 }

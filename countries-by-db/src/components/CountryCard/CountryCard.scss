@@ -1,0 +1,31 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+
+.country-card {
+  border: 2px solid $darkGrey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 1rem;
+  cursor: pointer;
+
+  &--lightMode {
+    background-color: $darkGrey;
+    color: $white;
+    box-shadow: 0 0 2px $black;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__flag {
+    width: 4rem;
+  }
+}

@@ -7,9 +7,8 @@
 
   &__signature {
     @include fontFamilyQwigley;
-    color: $white;
-
-    font-size: 3rem;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(54, 54, 54);
+    font-size: clamp(30px, 5vw, 60px);
+    letter-spacing: 0.2rem;
   }
 }

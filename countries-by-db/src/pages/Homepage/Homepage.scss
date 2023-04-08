@@ -9,14 +9,16 @@
   align-items: center;
 
   &__title {
-    @include fontFamilyEduNswActFoundation;
+    @include fontFamilyInter;
     color: $blue;
 
-    font-size: 8rem;
+    font-size: clamp(40px, 6vw, 100px);
     text-align: center;
+    text-shadow: 3px 3px 2px black;
   }
 
   &__title-api {
     color: $green;
+    font-size: clamp(30px, 4vw, 70px);
   }
 }

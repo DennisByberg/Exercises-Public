@@ -4,8 +4,13 @@ import "./Header.scss";
 import Toggle from "../Toggle/Toggle";
 //other
 import { Link } from "react-router-dom";
+// context
+import { useContext } from "react";
+import { DarkModeContext } from "../../App";
 
 const Header = () => {
+  const isDarkMode = useContext(DarkModeContext);
+
   return (
     <header className="header">
       <img
@@ -15,10 +20,20 @@ const Header = () => {
       <nav className="header__nav">
         <ul className="header__ul">
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              className={`header__link ${isDarkMode ? "" : "link--lightMode"}`}
+              to="/"
+            >
+              HOME
+            </Link>
           </li>
           <li>
-            <Link to="/Searchpage">Search</Link>
+            <Link
+              className={`header__link ${isDarkMode ? "" : "link--lightMode"}`}
+              to="/Searchpage"
+            >
+              SEARCH
+            </Link>
           </li>
           <li>
             <Toggle />

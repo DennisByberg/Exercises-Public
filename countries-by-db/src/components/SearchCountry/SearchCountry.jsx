@@ -3,9 +3,11 @@ import "./SearchCountry.scss";
 //components
 import CountryCard from "../CountryCard/CountryCard";
 //other
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { DarkModeContext } from "../../App";
 
 const SearchCountry = () => {
+  const isDarkMode = useContext(DarkModeContext);
   const [countries, setCountries] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [countryComponents, setCountryComponents] = useState([]);
@@ -45,7 +47,14 @@ const SearchCountry = () => {
 
   return (
     <section className="search-country">
-      <input type="text" onChange={handleSearchInput} />
+      <input
+        className={`search-country__input ${
+          isDarkMode ? "" : "input--lightMode"
+        }`}
+        type="text"
+        placeholder="ENTER COUNTRY..."
+        onChange={handleSearchInput}
+      />
       <ul className="search-country__ul">{countryComponents}</ul>
     </section>
   );

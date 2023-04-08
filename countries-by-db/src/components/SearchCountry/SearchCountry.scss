@@ -1,5 +1,42 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+
 .search-country {
+  display: flex;
+  flex-direction: column;
+
   &__ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin: 4rem 0;
+  }
+
+  &__input {
+    @include fontFamilyInter;
+    width: 50vw;
+    max-width: 600px;
+    border: none;
+    border: 2px solid rgb(179, 179, 179);
+    outline: none;
+    color: $white;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+
+    &.input--lightMode {
+      border: 2px solid rgb(0, 0, 0);
+      box-shadow: 0 0 4px $black;
+      background-color: $darkGrey;
+    }
+  }
+
+  ::placeholder {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.185);
   }
 }
